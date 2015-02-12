@@ -8,19 +8,19 @@ tests.
 
 ## Usage
 
-*ephemera.fs* provides a `create-directory!` function which makes it
+*ephemera.fs* provides a `write-tree!` function which makes it
 very easy to write create a temporary directory complete with file
 content.
 
 Simply pass a nested map of filenames and content and
-`create-directory!` generates the whole lot returning a `File`
+`write-tree!` generates the whole lot returning a `File`
 instance for the root.
 
 
 ````clojure
 (use 'ephemera.fs)
 ;; => nil
-(def root (create-directory!
+(def root (write-tree!
              {"file-a" "This content goes in file-a"
               "subdir" {"file-b.txt" "More text\nin here\n"
                          "foo.sh" "#!/bin/bash\necho Hello World!"}}))
