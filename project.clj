@@ -1,4 +1,4 @@
-(defproject ephemera "0.1.0-SNAPSHOT"
+(defproject org.curvelogic/ephemera "0.1.0-SNAPSHOT"
   :description "Temp file / directory utilities for Clojure."
   :url "https://github.com/curvelogic/ephemera"
   :license {:name "Eclipse Public License"
